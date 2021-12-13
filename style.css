@@ -1,0 +1,156 @@
+*{
+    user-select: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url("./99824.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    gap: 30px;
+}
+
+.consolelog{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    box-shadow: 5px 5px 5px 1px rgba(0,0,0,.3);
+    text-align: center;
+    font-size: 26px;
+    border-radius: 10px;
+    padding: 8px;
+    font-family: monospace;
+    font-weight: 900;
+    width: 400px;
+    height: 480px;
+    color: white;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+
+.consolelog.active{
+    height: 70px !important;
+    transition: 1s ease-in-out;
+}
+
+.chatLog{
+    width: 380px;
+    height: 400px;
+    background: rgba(0,0,0,.05);
+    border-radius: 10px;
+    position: relative;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    word-break: break-word;
+}
+
+.chatLog::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chatLog::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid white; 
+}
+
+hr{
+    width: 380px;
+    height: 1px;
+    border: 1px solid white;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 2px rgba(0,0,0,.3);
+}
+
+.logs{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: green;
+    font-size: 16px;
+    gap: 10px;
+    
+}
+
+button{
+    display: block;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    left: 40px;
+    font-size: 26px;
+    font-family: monospace;
+    font-weight: 900;
+    background: none;
+    inset: none;
+    outline: none;
+    backdrop-filter: blur(10px);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    color: black;
+    background: white;
+    transition: 0.1s;
+}
+
+button:active{
+    width: 80px;
+    font-size: 13px;
+    transition: 0.1s;
+}
+
+button.hidden{
+    display: none;
+    transition: 0.5s;
+}
+
+.title{
+    cursor: pointer;
+    padding: 10px;
+    transition: 1s;
+}
+
+.snakeControl{
+    position: absolute;
+    right: 50px;
+    top: 10px;
+}
+
+.colorpicker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: monospace;
+}
+
+#snakeScreen{
+    position: fixed;
+    top: 30px;
+}
+
+fieldset{
+    width: 350px;
+    height: 400px;
+}

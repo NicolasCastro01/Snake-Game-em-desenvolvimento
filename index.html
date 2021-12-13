@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Snake Game</title>
+    </head>
+    
+    <body>
+        <div id="consolelog" class="consolelog">
+            <div id="title" class="title">Console</div>
+            <button id="clear">clear</button>
+            <hr/>
+            <div class="chatLog">
+                <div id="logs" class="logs"></div>
+            </div>
+        </div>
+        <div id="snakeScreen">
+            <h1>Snake Game</h1>
+            <h2>Score: <span id="scorePoints"></span></h2>
+            <canvas id="canvas" width="400px" height="400px" style="background: black;"></canvas>
+        </div>
+        <div class="snakeControl">
+            <fieldset>
+                <div class="colorpicker">
+                    <label for="color">Snake color: </label>
+                    <input type="color" id="color" name="color">
+                    <button id="btnColor">change</button>
+                </div>
+            </fieldset>
+        </div>
+        <script src="clear.js"></script>
+        <script src="index.js"></script>
+    </body>
+
+</html>
